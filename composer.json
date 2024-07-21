@@ -1,0 +1,19 @@
+{
+    "name": "karl/api",
+    "autoload": {
+        "psr-4": {
+            "Karl\\Api\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dumgrammer",
+            "email": "bastianlacap55@gmail.com"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.4",
+        "pusher/pusher-php-server": "^7.2",
+        "firebase/php-jwt": "^6.10"
+    }
+}

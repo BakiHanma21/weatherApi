@@ -33,6 +33,11 @@ class Weather {
         return null;
     }
 
+    public function getCurrentWeatherByLatLon($lat, $lon) {
+        $url = "{$this->weatherHourly}?lat={$lat}&lon={$lon}&appid={$this->apiKey}";
+        return $this->makeRequest($url);
+    }
+
     private function makeRequest($url) {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
